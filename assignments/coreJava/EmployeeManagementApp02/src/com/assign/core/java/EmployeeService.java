@@ -1,19 +1,21 @@
 package com.assign.core.java;
 
 
+import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 public class EmployeeService {
   	
 	
 	EmployeeDao dao = new EmployeeDao();
   
-   public void add(Employee emp) throws Exception {
+   public void add(Employee e) throws Exception {
 	  
-	    dao.addRecord(emp);
+	    dao.addRecord(e);
    }
-   public void view(Employee emp) throws Exception {
-	   dao.viewAllRecord(emp);
+   public List view() throws Exception {
+	   return dao.viewAllRecord();
    }
    public void searchId(int sid) throws SQLException {
 	   dao.searchById(sid);
@@ -30,8 +32,12 @@ public class EmployeeService {
    public void stat() throws SQLException {
 	   dao.statistics();
    }
-	
-	
+   public void importD() throws SQLException {
+	   dao.importData();
+   }
+   public void export() throws SQLException, ClassNotFoundException, IOException {
+	   dao.exportData();
+   }
 	
 	
 }

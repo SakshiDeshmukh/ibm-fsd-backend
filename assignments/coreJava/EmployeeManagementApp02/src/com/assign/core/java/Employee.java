@@ -9,7 +9,7 @@ public class Employee {
     public Employee() {
 		
 	}
-     //  Employee e =new Employee(id,name,salary,dept,age);
+     
     public Employee(int id, String name, int salary, String dept, int age) {
 		super();
 		this.id = id;
