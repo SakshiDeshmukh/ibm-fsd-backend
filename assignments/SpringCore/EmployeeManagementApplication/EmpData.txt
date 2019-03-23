@@ -1,0 +1,4 @@
+1 sak 30000 CS 23
+3 rasika 35000 CS 25
+6 sarang 29000 CS 24
+8 sonal 20000 IT 21
