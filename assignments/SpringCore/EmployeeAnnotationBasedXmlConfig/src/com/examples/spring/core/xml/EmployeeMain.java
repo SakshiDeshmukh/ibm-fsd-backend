@@ -14,6 +14,7 @@ public class EmployeeMain {
 	    LocalDate dob =LocalDate.of(1996, 02, 24);
 	    
 	    Employee obj = (Employee) context.getBean("employee");
+	    obj.setDob(dob);
 	    obj.printDetails();
 	   
 	    }
